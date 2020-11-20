@@ -1,0 +1,7 @@
+{
+"partners_to_involve_in_simulation":["0B0198F0BC22812DCEE820E7C439D25C"],
+"partners_to_read_data_from":["0A2CEC84A65760AD90AA751C1C3DD861", "0B0198F0BC22812DCEE820E7C439D25C"],
+"number_of_simulation_steps":2,
+"npm": 10,
+"seed": 100
+}
