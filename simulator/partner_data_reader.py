@@ -21,6 +21,9 @@ class partner_data_reader:
         # print("Next day data for "+self.partner_id+" from partner data reader\n", temp["date"])
         return temp
 
+    def get_present_day(self):
+        return self.day
+
 
 if __name__ == '__main__':
     test = partner_data_reader("0A2CEC84A65760AD90AA751C1C3DD861")

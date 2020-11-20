@@ -8,9 +8,10 @@ class simulator_core:
         self.partners_list = partners_list
         self.partners_to_read_data_from = partners_to_read_data_from
         self.first_day = self.get_first_day()
+        self.present_day = self.first_day
         self.partner_simulator_list = []
         for e in self.partners_to_read_data_from:
-            e.set_day(self.first_day-timedelta(1))
+            e.set_day(self.first_day - timedelta(1))
         for e in self.partners_to_read_data_from:
             if e.partner_id in self.partners_list:
                 self.partner_simulator_list.append(pps(e.partner_id))
@@ -20,6 +21,7 @@ class simulator_core:
         for e in self.partners_to_read_data_from:
             if e.partner_id in self.partners_list:
                 date_list.append(e.first_day)
+        print(date_list)
         return min(date_list)
 
     def next_day(self):
@@ -27,7 +29,32 @@ class simulator_core:
         for e in self.partners_to_read_data_from:
             partner_data_next_day[e.partner_id] = e.next_day()
         for e in self.partner_simulator_list:
-            e.next_day(partner_data_next_day.get(e.partner))
+            e.next_day(partner_data_next_day.get(e.partner), self.present_day)
+        self.present_day = self.present_day + timedelta(1)
+
+    def get_clicks_per_day(self):
+        all_partners = {}
+        for e in self.partner_simulator_list:
+            all_partners[e.partner] = e.get_clicks_per_day()
+        return all_partners
+
+    def get_clicks_sum(self):
+        all_partners = {}
+        for e in self.partner_simulator_list:
+            all_partners[e.partner] = e.get_clicks_sum()
+        return all_partners
+
+    def get_sales_per_day(self):
+        all_partners = {}
+        for e in self.partner_simulator_list:
+            all_partners[e.partner] = e.get_sales_per_day()
+        return all_partners
+
+    def get_sales_sum(self):
+        all_partners = {}
+        for e in self.partner_simulator_list:
+            all_partners[e.partner] = e.get_sales_sum()
+        return all_partners
 
 
 if __name__ == '__main__':

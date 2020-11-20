@@ -1,7 +1,12 @@
 {
-"partners_to_involve_in_simulation":["0B0198F0BC22812DCEE820E7C439D25C"],
-"partners_to_read_data_from":["0A2CEC84A65760AD90AA751C1C3DD861", "0B0198F0BC22812DCEE820E7C439D25C"],
-"number_of_simulation_steps":2,
+"partners_to_involve_in_simulation":["C0F515F0A2D0A5D9F854008BA76EB537"],
+"partners_to_read_data_from":[
+  "C0F515F0A2D0A5D9F854008BA76EB537",
+  "4A3E02973F936964A612735592737267",
+  "2AAA4123BE41F050F159BD574800464F",
+  "1ECCA0B56FCB14C11227DA5977905A70"
+],
+"number_of_simulation_steps": 40,
 "npm": 10,
 "seed": 100
 }
