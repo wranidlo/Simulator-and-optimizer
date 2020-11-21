@@ -21,7 +21,6 @@ class simulator_core:
         for e in self.partners_to_read_data_from:
             if e.partner_id in self.partners_list:
                 date_list.append(e.first_day)
-        print(date_list)
         return min(date_list)
 
     def next_day(self):
@@ -55,6 +54,38 @@ class simulator_core:
         for e in self.partner_simulator_list:
             all_partners[e.partner] = e.get_sales_sum()
         return all_partners
+
+    def get_gain_data_per_partner(self):
+        all_partners = {}
+        for e in self.partner_simulator_list:
+            all_partners[e.partner] = e.get_gain_info()
+        return all_partners
+
+    def get_gain_calculated(self):
+        clicks = 0
+        sale_losses = 0
+        profit_losses = 0
+        profit_gain = 0
+        for e in self.partner_simulator_list:
+            clicks += sum(item["clicks_savings"] for item in e.get_gain_info())
+            sale_losses += sum(item["sale_losses"] for item in e.get_gain_info())
+            profit_losses += sum(item["profit_losses"] for item in e.get_gain_info())
+            profit_gain += sum(item["profit_gain"] for item in e.get_gain_info())
+        return clicks, sale_losses, profit_losses, profit_gain
+
+    def get_total_sales(self):
+        total_sales = 0
+        for e in self.partner_simulator_list:
+            for f in e.sales_per_day:
+                total_sales += f
+        return total_sales
+
+    def get_total_clicks(self):
+        total_clicks = 0
+        for e in self.partner_simulator_list:
+            for f in e.clicks_per_day:
+                total_clicks += f
+        return total_clicks
 
 
 if __name__ == '__main__':

@@ -24,17 +24,28 @@ if __name__ == '__main__':
     for i in range(1, number_of_simulation_steps+1):
         print("Day : ", i)
         executor.next_day()
+
+    clicks, sale_losses, profit_losses, profit_gain = executor.get_gain_calculated()
     results = {
         "Clicks of partners per day": executor.get_clicks_per_day(),
         "Sales of partners per day": executor.get_sales_per_day(),
-        "Clicks sum": executor.get_clicks_sum(),
-        "Sales sum": executor.get_sales_sum()
+        "Clicks sum without exclusion": executor.get_clicks_sum(),
+        "Sales sum without exclusion": executor.get_sales_sum(),
+        "Gain info per partner per day": executor.get_gain_data_per_partner(),
+        "Gain info summed": {
+                    "clicks_savings": clicks,
+                    "sale_losses": sale_losses,
+                    "profit_losses": profit_losses,
+                    "profit_gain": profit_gain
+                }
     }
 
     print("Clicks of partners per day\n", results.get("Clicks of partners per day"))
-    print("Clicks of partners\n", results.get("Clicks sum"))
+    print("Clicks of partners\n", results.get("Clicks sum without exclusion"))
     print("Sales of partners per day\n", results.get("Sales of partners per day"))
-    print("Sales of partners\n", results.get("Sales sum"))
+    print("Sales of partners\n", results.get("Sales sum without exclusion"))
+    print("Gain info per partner per day\n", results.get("Gain info per partner per day"))
+    print("Gain info summed\n", results.get("Gain info summed"))
 
     with open('simulation_results.json', 'w') as fp:
-        json.dump(results, fp)
+        json.dump(results, fp, separators=(',', ':'))

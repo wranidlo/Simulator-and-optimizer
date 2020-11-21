@@ -19,12 +19,16 @@ class product_list_optimizer:
         else:
             self.data = self.data.append(data, ignore_index=True)
         print("Optimizing data for user: ", self.partner, " for day: ", present_day)
-        # print(self.data)
-        unique_products = self.data["product_id"].unique()
+        print(self.data.shape)
+        unique_products = self.data["product_id"].unique().tolist()
         # print(unique_products)
         excluded_products = []
-        if len(unique_products) > 1:
-            item_nr = random.randint(0, len(unique_products))
-            item = unique_products[item_nr-1]
-            excluded_products.append(item)
+        for _ in range(0, 5):
+            if len(unique_products) > 1:
+                item_nr = random.randint(0, len(unique_products) - 1)
+                item = unique_products[item_nr]
+                unique_products.remove(item)
+                excluded_products.append(item)
+            else:
+                break
         return excluded_products
