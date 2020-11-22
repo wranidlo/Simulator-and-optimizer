@@ -6,7 +6,8 @@
   "2AAA4123BE41F050F159BD574800464F",
   "1ECCA0B56FCB14C11227DA5977905A70"
 ],
-"number_of_simulation_steps": 40,
-"npm": 10,
-"seed": 100
+  "number_of_simulation_steps": 40,
+  "npm": 10,
+  "cost":  12,
+  "seed": 100
 }

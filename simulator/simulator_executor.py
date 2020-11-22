@@ -7,7 +7,6 @@ if __name__ == '__main__':
     partners_to_involve_in_simulation = []
     partners_to_read_data_from = []
     number_of_simulation_steps = 0
-    nmp = 10
     with open('sim_conf') as json_file:
         data = json.load(json_file)
         number_of_simulation_steps = data["number_of_simulation_steps"]

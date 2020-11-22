@@ -11,7 +11,6 @@ class product_list_optimizer:
         with open('sim_conf') as json_file:
             data = json.load(json_file)
             self.seed = data["seed"]
-        random.seed(self.seed)
 
     def next_day(self, data, present_day):
         if self.data is None:
@@ -19,16 +18,19 @@ class product_list_optimizer:
         else:
             self.data = self.data.append(data, ignore_index=True)
         print("Optimizing data for user: ", self.partner, " for day: ", present_day)
-        print(self.data.shape)
-        unique_products = self.data["product_id"].unique().tolist()
+        # unique_products = self.data["product_id"].unique().tolist()
         # print(unique_products)
-        excluded_products = []
-        for _ in range(0, 5):
-            if len(unique_products) > 1:
-                item_nr = random.randint(0, len(unique_products) - 1)
-                item = unique_products[item_nr]
-                unique_products.remove(item)
-                excluded_products.append(item)
-            else:
-                break
+        excluded_products = self.get_excluded_products_pseudorandomly()
+        if excluded_products is None:
+            return []
+        else:
+            return excluded_products
+
+    def get_excluded_products_pseudorandomly(self):
+        unique_products = self.data["product_id"].unique().tolist()
+
+        unique_products.sort()
+        how_many_products = round(len(unique_products) / 3.1)
+        random.seed(self.seed)
+        excluded_products = random.sample(unique_products, how_many_products)
         return excluded_products
