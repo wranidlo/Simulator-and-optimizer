@@ -25,7 +25,7 @@ class per_partner_simulator:
                 next_day_data["product_id"].apply(lambda x: x in self.excluded_items)]
             next_day_data = next_day_data[
                 next_day_data["product_id"].apply(lambda x: x not in self.excluded_items)]
-            print("Excluded data: ", excluded_data[["SalesAmountInEuro", "product_id"]])
+            print("Excluded data: ", excluded_data[["SalesAmountInEuro", "date", "product_id"]])
             if excluded_data.shape[0] > 0:
                 sales = excluded_data.loc[excluded_data['Sale'] == 1]['SalesAmountInEuro'].sum(axis=0)
                 clicks = len(excluded_data.index)

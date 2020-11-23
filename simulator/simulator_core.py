@@ -87,6 +87,26 @@ class simulator_core:
                 total_clicks += f
         return total_clicks
 
+    def get_profit_gain_per_user_per_day(self):
+        out = {}
+        for e in self.partner_simulator_list:
+            out[e.partner] = []
+            for day in e.get_gain_info():
+                out[e.partner].append(day["profit_gain"])
+        return out
+
+    def get_profit_gain_per_user_per_day_accumulated(self):
+        out = {}
+        for e in self.partner_simulator_list:
+            out[e.partner] = []
+            for day in e.get_gain_info():
+                if len(out[e.partner])>0:
+                    last = len(out[e.partner])-1
+                    out[e.partner].append(day["profit_gain"]+out[e.partner][last])
+                else:
+                    out[e.partner].append(day["profit_gain"])
+        return out
+
 
 if __name__ == '__main__':
     pdr_a = pdr("0A2CEC84A65760AD90AA751C1C3DD861")

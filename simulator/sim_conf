@@ -9,5 +9,5 @@
   "number_of_simulation_steps": 40,
   "npm": 10,
   "cost":  12,
-  "seed": 100
+  "seed": 12
 }

@@ -1,6 +1,7 @@
 from simulator.simulator_core import simulator_core as sc
 from simulator.partner_data_reader import partner_data_reader as pdr
 import json
+import matplotlib.pyplot as plt
 
 
 if __name__ == '__main__':
@@ -45,6 +46,16 @@ if __name__ == '__main__':
     print("Sales of partners\n", results.get("Sales sum without exclusion"))
     print("Gain info per partner per day\n", results.get("Gain info per partner per day"))
     print("Gain info summed\n", results.get("Gain info summed"))
-
     with open('simulation_results.json', 'w') as fp:
         json.dump(results, fp, separators=(',', ':'))
+    ploted = executor.get_profit_gain_per_user_per_day()
+    for e in ploted:
+        plt.plot(range(1, number_of_simulation_steps+1), ploted.get(e))
+        plt.ylabel('profit gain')
+        plt.show()
+
+    ploted = executor.get_profit_gain_per_user_per_day_accumulated()
+    for e in ploted:
+        plt.plot(range(1, number_of_simulation_steps + 1), ploted.get(e))
+        plt.ylabel('profit gaina accumulated')
+        plt.show()
