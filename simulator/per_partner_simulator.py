@@ -14,12 +14,15 @@ class per_partner_simulator:
             data = json.load(json_file)
             self.npm = data["npm"]
             self.cost = data["cost"]
+            self.click_cost = data["click_cost"]
 
     def next_day(self, next_day_data, present_day):
+        unique_products = next_day_data["product_id"].unique().tolist()
+        print("all prod uniqe: ", len(unique_products))
         self.clicks_per_day.append(len(next_day_data.index))
         # self.clicks_per_day.append(len(next_day_data.loc[next_day_data['Sale'] == 0]))
         self.sales_per_day.append(next_day_data.loc[next_day_data['Sale'] == 1]['SalesAmountInEuro'].sum(axis=0))
-        print(next_day_data.shape)
+        print("data all: ", next_day_data.shape[0])
         if next_day_data.shape[0] > 0:
             excluded_data = next_day_data[
                 next_day_data["product_id"].apply(lambda x: x in self.excluded_items)]
@@ -30,10 +33,10 @@ class per_partner_simulator:
                 sales = excluded_data.loc[excluded_data['Sale'] == 1]['SalesAmountInEuro'].sum(axis=0)
                 clicks = len(excluded_data.index)
                 gain = {
-                    "clicks_savings": clicks,
+                    "clicks_savings": (clicks*0.092),
                     "sale_losses": sales,
                     "profit_losses": (sales*self.npm)/100,
-                    "profit_gain": (sales*(self.npm+self.cost))/100 - clicks
+                    "profit_gain": (clicks*self.click_cost) - (sales*(self.npm+self.cost))/100
                 }
                 self.gain_info.append(gain)
             else:
