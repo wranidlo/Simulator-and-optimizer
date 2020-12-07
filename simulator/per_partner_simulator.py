@@ -18,17 +18,21 @@ class per_partner_simulator:
 
     def next_day(self, next_day_data, present_day):
         unique_products = next_day_data["product_id"].unique().tolist()
-        print("all prod uniqe: ", len(unique_products))
+        #print("Data z tego dnia: \n", next_day_data["date"])
+        print("Wszystkie unikatowe produkty z danego dnia: ", len(unique_products))
         self.clicks_per_day.append(len(next_day_data.index))
         # self.clicks_per_day.append(len(next_day_data.loc[next_day_data['Sale'] == 0]))
         self.sales_per_day.append(next_day_data.loc[next_day_data['Sale'] == 1]['SalesAmountInEuro'].sum(axis=0))
-        print("data all: ", next_day_data.shape[0])
+        print("Liczba wszystkiech wierszy z danego dnia: ", next_day_data.shape[0])
         if next_day_data.shape[0] > 0:
             excluded_data = next_day_data[
                 next_day_data["product_id"].apply(lambda x: x in self.excluded_items)]
             next_day_data = next_day_data[
                 next_day_data["product_id"].apply(lambda x: x not in self.excluded_items)]
-            print("Excluded data: ", excluded_data[["SalesAmountInEuro", "date", "product_id"]])
+            unique_products = next_day_data["product_id"].unique().tolist()
+            print("Wszystkie unikatowe produkty z danego dnia po usunięciu: ", len(unique_products))
+            ex = excluded_data["product_id"].unique().tolist()
+            print("Excluded products: ", ex)
             if excluded_data.shape[0] > 0:
                 sales = excluded_data.loc[excluded_data['Sale'] == 1]['SalesAmountInEuro'].sum(axis=0)
                 clicks = len(excluded_data.index)

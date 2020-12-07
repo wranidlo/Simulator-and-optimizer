@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import glob
 
-os.chdir("D:/data/saved")
+os.chdir("D:/data/saved2")
 for file in glob.glob("*.csv"):
     print(file)
     df = pd.read_csv(file, sep=",", header=0, index_col=False)

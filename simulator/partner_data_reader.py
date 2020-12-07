@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 class partner_data_reader:
     def __init__(self, partner_id):
         self.partner_id = partner_id
-        self.df = pd.read_csv("D:/data/saved/"+partner_id+".csv", sep=",", header=0)
+        self.df = pd.read_csv("D:/data/saved2/"+partner_id+".csv", sep=",", header=0)
         self.df["date"] = pd.to_datetime(self.df["date"])
         self.first_day = self.df["date"][0].date()
         self.day = self.first_day

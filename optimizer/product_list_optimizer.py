@@ -12,13 +12,13 @@ class product_list_optimizer:
             self.seed = data["seed"]
 
     def next_day(self, data, present_day):
-        print("after data: ", data.shape[0])
+        print("Liczba wierszy po usunięciu produktów do wykluczenia: ", data.shape[0])
         if self.data is None:
             self.data = data
         else:
             self.data = self.data.append(data, ignore_index=True)
         print("Optimizing data for user: ", self.partner, " for day: ", present_day)
-        # print(data[["SalesAmountInEuro", "date", "product_id"]])
+        # print(data[["SalesAmountInEuro", "date", "product_id"]].head(2))
         # unique_products = self.data["product_id"].unique().tolist()
         # print(unique_products)
         excluded_products = self.get_excluded_products_pseudorandomly(self.data)
@@ -29,10 +29,11 @@ class product_list_optimizer:
 
     def get_excluded_products_pseudorandomly(self, data):
         unique_products = data["product_id"].unique().tolist()
-        print("all prod: ", len(unique_products))
+        print("Wszystkie unikatowe produkty w optimizerze: ", len(unique_products))
         unique_products.sort()
-        how_many_products = round(len(unique_products) / 3.1)
+        how_many_products = round(len(unique_products) / 20)
         random.seed(self.seed)
         excluded_products = random.sample(unique_products, how_many_products)
-        print("Excluded: ", len(excluded_products))
+        excluded_products.sort()
+        print("Liczba produktów do wykluczenia w dniu następnym: ", len(excluded_products))
         return excluded_products
