@@ -1,1 +1,346 @@
-{"Clicks of partners per day":{"C0F515F0A2D0A5D9F854008BA76EB537":[568,649,183,524,0,880,764,877,907,742,641,788,941,914,640,785,736,673,787,677,759,521,685,659,649,936,921,952,946,922,705,586,766,396,0,0,0,0,0,0]},"Sales of partners per day":{"C0F515F0A2D0A5D9F854008BA76EB537":[179.51860999999994,618.1200100000001,171.06252999999998,417.59546,0.0,560.2664400000001,678.1666900000001,732.0422299999999,691.6562599999999,562.31664,462.55981999999995,647.8307199999999,593.1348100000001,678.4647400000001,389.9265000000001,541.23695,529.86672,729.2054300000001,738.2502600000001,645.3175899999999,907.1834,609.13,458.39589,467.60236000000003,850.27175,714.47601,797.2907499999999,582.5583799999999,595.56948,426.82689,779.13782,273.45128000000005,307.07657,160.89636,0.0,0.0,0.0,0.0,0.0,0.0]},"Clicks sum without exclusion":{"C0F515F0A2D0A5D9F854008BA76EB537":24079},"Sales sum without exclusion":{"C0F515F0A2D0A5D9F854008BA76EB537":18496.405350000005},"Gain info per partner per day":{"C0F515F0A2D0A5D9F854008BA76EB537":[{"clicks_savings":0,"sale_losses":0,"profit_losses":0,"profit_gain":0},{"clicks_savings":1.564,"sale_losses":13.82023,"profit_losses":1.382023,"profit_gain":-1.4764506000000002},{"clicks_savings":2.024,"sale_losses":28.15731,"profit_losses":2.815731,"profit_gain":-4.1706082},{"clicks_savings":2.116,"sale_losses":0.0,"profit_losses":0.0,"profit_gain":2.116},{"clicks_savings":0,"sale_losses":0,"profit_losses":0,"profit_gain":0},{"clicks_savings":3.404,"sale_losses":19.09068,"profit_losses":1.9090679999999998,"profit_gain":-0.7959496000000001},{"clicks_savings":4.232,"sale_losses":16.35456,"profit_losses":1.6354559999999998,"profit_gain":0.6339968000000002},{"clicks_savings":3.128,"sale_losses":36.32655,"profit_losses":3.6326549999999997,"profit_gain":-4.863840999999999},{"clicks_savings":2.76,"sale_losses":87.22724,"profit_losses":8.722724,"profit_gain":-16.4299928},{"clicks_savings":4.968,"sale_losses":63.65010999999999,"profit_losses":6.365010999999999,"profit_gain":-9.035024199999997},{"clicks_savings":1.932,"sale_losses":13.964160000000001,"profit_losses":1.396416,"profit_gain":-1.1401152000000003},{"clicks_savings":2.76,"sale_losses":5.94054,"profit_losses":0.594054,"profit_gain":1.4530811999999997},{"clicks_savings":2.208,"sale_losses":18.68274,"profit_losses":1.8682739999999998,"profit_gain":-1.9022027999999995},{"clicks_savings":4.508,"sale_losses":0.0,"profit_losses":0.0,"profit_gain":4.508},{"clicks_savings":0.552,"sale_losses":0.0,"profit_losses":0.0,"profit_gain":0.552},{"clicks_savings":1.104,"sale_losses":14.691210000000002,"profit_losses":1.4691210000000001,"profit_gain":-2.1280662},{"clicks_savings":4.14,"sale_losses":12.47942,"profit_losses":1.2479419999999999,"profit_gain":1.3945276},{"clicks_savings":1.932,"sale_losses":3.19588,"profit_losses":0.319588,"profit_gain":1.2289064},{"clicks_savings":3.312,"sale_losses":69.78004,"profit_losses":6.978003999999999,"profit_gain":-12.0396088},{"clicks_savings":3.128,"sale_losses":72.1193,"profit_losses":7.21193,"profit_gain":-12.738245999999998},{"clicks_savings":1.104,"sale_losses":0.0,"profit_losses":0.0,"profit_gain":1.104},{"clicks_savings":0.828,"sale_losses":0.0,"profit_losses":0.0,"profit_gain":0.828},{"clicks_savings":1.932,"sale_losses":0.0,"profit_losses":0.0,"profit_gain":1.932},{"clicks_savings":2.944,"sale_losses":27.993300000000005,"profit_losses":2.7993300000000003,"profit_gain":-3.214526000000002},{"clicks_savings":2.484,"sale_losses":45.12264,"profit_losses":4.512263999999999,"profit_gain":-7.442980799999999},{"clicks_savings":0.828,"sale_losses":62.486810000000006,"profit_losses":6.248681,"profit_gain":-12.9190982},{"clicks_savings":2.484,"sale_losses":0.0,"profit_losses":0.0,"profit_gain":2.484},{"clicks_savings":4.416,"sale_losses":29.026,"profit_losses":2.9026,"profit_gain":-1.9697199999999997},{"clicks_savings":3.404,"sale_losses":23.116139999999998,"profit_losses":2.311614,"profit_gain":-1.6815508000000001},{"clicks_savings":4.692,"sale_losses":35.54833,"profit_losses":3.554833,"profit_gain":-3.1286325999999995},{"clicks_savings":4.048,"sale_losses":68.24321,"profit_losses":6.824321,"profit_gain":-10.965506200000002},{"clicks_savings":4.048,"sale_losses":8.093069999999999,"profit_losses":0.8093069999999999,"profit_gain":2.2675246000000007},{"clicks_savings":1.748,"sale_losses":11.48543,"profit_losses":1.1485429999999999,"profit_gain":-0.7787945999999997},{"clicks_savings":2.024,"sale_losses":60.40266999999999,"profit_losses":6.040266999999999,"profit_gain":-11.2645874},{"clicks_savings":0,"sale_losses":0,"profit_losses":0,"profit_gain":0},{"clicks_savings":0,"sale_losses":0,"profit_losses":0,"profit_gain":0},{"clicks_savings":0,"sale_losses":0,"profit_losses":0,"profit_gain":0},{"clicks_savings":0,"sale_losses":0,"profit_losses":0,"profit_gain":0},{"clicks_savings":0,"sale_losses":0,"profit_losses":0,"profit_gain":0},{"clicks_savings":0,"sale_losses":0,"profit_losses":0,"profit_gain":0}]},"Gain info summed":{"clicks_savings":86.75600000000001,"sale_losses":846.9975699999998,"profit_losses":84.69975700000002,"profit_gain":-99.5834654}}
+{
+    "Clicks of partners per day": {
+        "C0F515F0A2D0A5D9F854008BA76EB537": [
+            568,
+            649,
+            183,
+            524,
+            0,
+            880,
+            764,
+            877,
+            907,
+            742,
+            641,
+            788,
+            941,
+            914,
+            640,
+            785,
+            736,
+            673,
+            787,
+            677,
+            759,
+            521,
+            685,
+            659,
+            649,
+            936,
+            921,
+            952,
+            946,
+            922,
+            705,
+            586,
+            766,
+            396,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "Clicks sum without exclusion": {
+        "C0F515F0A2D0A5D9F854008BA76EB537": 24079
+    },
+    "Gain info per partner per day": {
+        "C0F515F0A2D0A5D9F854008BA76EB537": [
+            {
+                "clicks_savings": 0,
+                "profit_gain": 0,
+                "profit_losses": 0,
+                "sale_losses": 0
+            },
+            {
+                "clicks_savings": 13.892,
+                "profit_gain": -22.358711568462144,
+                "profit_losses": 16.489855,
+                "sale_losses": 164.89855
+            },
+            {
+                "clicks_savings": 6.164,
+                "profit_gain": -8.785322631039493,
+                "profit_losses": 6.800585999999999,
+                "sale_losses": 68.00586
+            },
+            {
+                "clicks_savings": 13.616,
+                "profit_gain": -11.516539784982765,
+                "profit_losses": 11.435897,
+                "sale_losses": 114.35897
+            },
+            {
+                "clicks_savings": 0,
+                "profit_gain": 0,
+                "profit_losses": 0,
+                "sale_losses": 0
+            },
+            {
+                "clicks_savings": 21.16,
+                "profit_gain": -25.32791313341916,
+                "profit_losses": 21.149542,
+                "sale_losses": 211.49542
+            },
+            {
+                "clicks_savings": 20.791999999999998,
+                "profit_gain": -6.458555955446652,
+                "profit_losses": 12.404964,
+                "sale_losses": 124.04964
+            },
+            {
+                "clicks_savings": 28.887999999999998,
+                "profit_gain": -60.28534607084181,
+                "profit_losses": 40.558831000000005,
+                "sale_losses": 405.58831000000004
+            },
+            {
+                "clicks_savings": 23.368,
+                "profit_gain": -63.49230360125421,
+                "profit_losses": 39.502577,
+                "sale_losses": 395.02577
+            },
+            {
+                "clicks_savings": 26.035999999999998,
+                "profit_gain": -50.17480244155489,
+                "profit_losses": 34.664249,
+                "sale_losses": 346.64249
+            },
+            {
+                "clicks_savings": 19.044,
+                "profit_gain": -12.096850060077244,
+                "profit_losses": 14.171737000000002,
+                "sale_losses": 141.71737000000002
+            },
+            {
+                "clicks_savings": 19.32,
+                "profit_gain": 13.365921556443375,
+                "profit_losses": 2.7234479999999994,
+                "sale_losses": 27.234479999999998
+            },
+            {
+                "clicks_savings": 26.588,
+                "profit_gain": -15.379344608513644,
+                "profit_losses": 19.099528,
+                "sale_losses": 190.99528
+            },
+            {
+                "clicks_savings": 31.372,
+                "profit_gain": -14.021830122156235,
+                "profit_losses": 20.661243000000002,
+                "sale_losses": 206.61243000000002
+            },
+            {
+                "clicks_savings": 16.1,
+                "profit_gain": 2.193501363702815,
+                "profit_losses": 6.335342999999999,
+                "sale_losses": 63.353429999999996
+            },
+            {
+                "clicks_savings": 22.631999999999998,
+                "profit_gain": -5.688007445309189,
+                "profit_losses": 12.892702,
+                "sale_losses": 128.92702
+            },
+            {
+                "clicks_savings": 19.412,
+                "profit_gain": 14.77730156195025,
+                "profit_losses": 2.123811,
+                "sale_losses": 21.23811
+            },
+            {
+                "clicks_savings": 15.916,
+                "profit_gain": -54.122045247310936,
+                "profit_losses": 31.849520000000002,
+                "sale_losses": 318.4952
+            },
+            {
+                "clicks_savings": 21.528,
+                "profit_gain": -47.971405511391666,
+                "profit_losses": 31.609636000000002,
+                "sale_losses": 316.09636
+            },
+            {
+                "clicks_savings": 17.02,
+                "profit_gain": -24.051122181228468,
+                "profit_losses": 18.683711000000006,
+                "sale_losses": 186.83711000000005
+            },
+            {
+                "clicks_savings": 18.86,
+                "profit_gain": -19.245637271090995,
+                "profit_losses": 17.337387,
+                "sale_losses": 173.37387
+            },
+            {
+                "clicks_savings": 11.868,
+                "profit_gain": -18.199906489613355,
+                "profit_losses": 13.677703,
+                "sale_losses": 136.77703
+            },
+            {
+                "clicks_savings": 20.148,
+                "profit_gain": 0.9503080060052334,
+                "profit_losses": 8.744003,
+                "sale_losses": 87.44003000000001
+            },
+            {
+                "clicks_savings": 22.172,
+                "profit_gain": 0.03031872715644468,
+                "profit_losses": 10.083966,
+                "sale_losses": 100.83966000000001
+            },
+            {
+                "clicks_savings": 23.0,
+                "profit_gain": -14.825508423281697,
+                "profit_losses": 17.213708999999998,
+                "sale_losses": 172.13709
+            },
+            {
+                "clicks_savings": 26.772,
+                "profit_gain": -7.638766197499894,
+                "profit_losses": 15.664882,
+                "sale_losses": 156.64882
+            },
+            {
+                "clicks_savings": 28.704,
+                "profit_gain": -38.87768448185555,
+                "profit_losses": 30.744277,
+                "sale_losses": 307.44277
+            },
+            {
+                "clicks_savings": 24.012,
+                "profit_gain": 4.694887037293906,
+                "profit_losses": 8.801695,
+                "sale_losses": 88.01695000000001
+            },
+            {
+                "clicks_savings": 28.98,
+                "profit_gain": -14.784419465334935,
+                "profit_losses": 19.918491,
+                "sale_losses": 199.18491
+            },
+            {
+                "clicks_savings": 25.3,
+                "profit_gain": 2.9941245143901405,
+                "profit_losses": 10.16136,
+                "sale_losses": 101.61359999999999
+            },
+            {
+                "clicks_savings": 15.916,
+                "profit_gain": -30.09074784731093,
+                "profit_losses": 20.926203,
+                "sale_losses": 209.26203
+            },
+            {
+                "clicks_savings": 17.112,
+                "profit_gain": -0.8997425757215787,
+                "profit_losses": 8.202256,
+                "sale_losses": 82.02256
+            },
+            {
+                "clicks_savings": 23.368,
+                "profit_gain": 5.859372198745799,
+                "profit_losses": 7.979087999999999,
+                "sale_losses": 79.79087999999999
+            },
+            {
+                "clicks_savings": 12.696,
+                "profit_gain": 3.571129159948505,
+                "profit_losses": 4.158872,
+                "sale_losses": 41.588719999999995
+            },
+            {
+                "clicks_savings": 0,
+                "profit_gain": 0,
+                "profit_losses": 0,
+                "sale_losses": 0
+            },
+            {
+                "clicks_savings": 0,
+                "profit_gain": 0,
+                "profit_losses": 0,
+                "sale_losses": 0
+            },
+            {
+                "clicks_savings": 0,
+                "profit_gain": 0,
+                "profit_losses": 0,
+                "sale_losses": 0
+            },
+            {
+                "clicks_savings": 0,
+                "profit_gain": 0,
+                "profit_losses": 0,
+                "sale_losses": 0
+            },
+            {
+                "clicks_savings": 0,
+                "profit_gain": 0,
+                "profit_losses": 0,
+                "sale_losses": 0
+            },
+            {
+                "clicks_savings": 0,
+                "profit_gain": 0,
+                "profit_losses": 0,
+                "sale_losses": 0
+            }
+        ]
+    },
+    "Gain info summed": {
+        "clicks_savings": 661.7560000000001,
+        "profit_gain": -517.855648989061,
+        "profit_losses": 536.7710720000001,
+        "sale_losses": 5367.710719999999
+    },
+    "Sales of partners per day": {
+        "C0F515F0A2D0A5D9F854008BA76EB537": [
+            179.51860999999994,
+            618.1200100000001,
+            171.06252999999998,
+            417.59546,
+            0.0,
+            560.2664400000001,
+            678.1666900000001,
+            732.0422299999999,
+            691.6562599999999,
+            562.31664,
+            462.55981999999995,
+            647.8307199999999,
+            593.1348100000001,
+            678.4647400000001,
+            389.9265000000001,
+            541.23695,
+            529.86672,
+            729.2054300000001,
+            738.2502600000001,
+            645.3175899999999,
+            907.1834,
+            609.13,
+            458.39589,
+            467.60236000000003,
+            850.27175,
+            714.47601,
+            797.2907499999999,
+            582.5583799999999,
+            595.56948,
+            426.82689,
+            779.13782,
+            273.45128000000005,
+            307.07657,
+            160.89636,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ]
+    },
+    "Sales sum without exclusion": {
+        "C0F515F0A2D0A5D9F854008BA76EB537": 18496.405350000005
+    }
+}

@@ -10,11 +10,15 @@ class per_partner_simulator:
         self.clicks_per_day = []
         self.sales_per_day = []
         self.gain_info = []
+        with open('D:/data/saved2/costs.json') as json_costs:
+            costs = json.load(json_costs)
+            self.click_cost = costs[self.partner + ".csv"]
         with open('sim_conf') as json_file:
             data = json.load(json_file)
             self.npm = data["npm"]
             self.cost = data["cost"]
-            self.click_cost = data["click_cost"]
+
+        self.list_exclusion = json.loads('{}')
 
     def next_day(self, next_day_data, present_day):
         unique_products = next_day_data["product_id"].unique().tolist()
@@ -33,6 +37,10 @@ class per_partner_simulator:
             print("Wszystkie unikatowe produkty z danego dnia po usunięciu: ", len(unique_products))
             ex = excluded_data["product_id"].unique().tolist()
             print("Excluded products: ", ex)
+            self.list_exclusion.update({str(present_day): {"products to exclude": self.excluded_items,
+                                                      "products actually excluded": ex}})
+            with open('excluded.json', 'w') as out:
+                json.dump(self.list_exclusion, out, sort_keys=True, indent=4, separators=(',', ': '))
             if excluded_data.shape[0] > 0:
                 sales = excluded_data.loc[excluded_data['Sale'] == 1]['SalesAmountInEuro'].sum(axis=0)
                 clicks = len(excluded_data.index)
