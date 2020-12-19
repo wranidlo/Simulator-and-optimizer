@@ -18,7 +18,7 @@ class per_partner_simulator:
             self.npm = data["npm"]
             self.cost = data["cost"]
 
-        self.list_exclusion = json.loads('{}')
+        self.list_exclusion = json.loads('{"days": []}')
 
     def next_day(self, next_day_data, present_day):
         unique_products = next_day_data["product_id"].unique().tolist()
@@ -36,10 +36,11 @@ class per_partner_simulator:
             unique_products = next_day_data["product_id"].unique().tolist()
             print("Wszystkie unikatowe produkty z danego dnia po usunięciu: ", len(unique_products))
             ex = excluded_data["product_id"].unique().tolist()
+            ex.sort()
             print("Excluded products: ", ex)
-            self.list_exclusion.update({str(present_day): {"products to exclude": self.excluded_items,
-                                                      "products actually excluded": ex}})
-            with open('excluded.json', 'w') as out:
+            self.list_exclusion["days"].append({"day": str(present_day), "productsToExclude": self.excluded_items,
+                                                      "productsActuallyExcluded": ex})
+            with open(self.partner+'.json', 'w') as out:
                 json.dump(self.list_exclusion, out, sort_keys=True, indent=4, separators=(',', ': '))
             if excluded_data.shape[0] > 0:
                 sales = excluded_data.loc[excluded_data['Sale'] == 1]['SalesAmountInEuro'].sum(axis=0)
@@ -59,6 +60,10 @@ class per_partner_simulator:
                     "profit_gain": 0
                 })
         else:
+            self.list_exclusion["days"].append({"day": str(present_day), "productsToExclude": self.excluded_items,
+                                                "productsActuallyExcluded": []})
+            with open(self.partner+'.json', 'w') as out:
+                json.dump(self.list_exclusion, out, sort_keys=True, indent=4, separators=(',', ': '))
             self.gain_info.append({
                 "clicks_savings": 0,
                 "sale_losses": 0,
