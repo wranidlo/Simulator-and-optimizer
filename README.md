@@ -8,5 +8,5 @@ Simulator consists of parts that allows:
 - starting optimization and excluding products indicated by the optimizer of the previous day,
 - calculating the results (profits and losses) obtained as a result of the simulation (product exclusion) of a given producer.
 
-##Optimizer
+## Optimizer
 Optimizer collects the data received by the simulator and selecting products to exclude in the future time period (next day).
